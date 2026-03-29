@@ -66,6 +66,12 @@
   }
 }
 
+.archive__item-authors {
+  margin: 0 0 0.2em;
+  font-size: $type-size-5;
+  line-height: 1.4;
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;

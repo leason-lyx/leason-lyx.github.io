@@ -9,56 +9,36 @@ redirect_from:
 
 {% include base_path %}
 
+Profile
+======
+* Name: Li Yixin
+* Affiliation: Peking University
+* Position: Senior Undergraduate Student
+* Next Position: Incoming Ph.D. Student at Peking University
+* Research Area: AI4SE
+
+Research Interests
+======
+* AI for Software Engineering
+* Large Language Models for Software Engineering
+* Coding Agent
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
-
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Senior Undergraduate Student, Peking University
+* Incoming Ph.D. Student, Peking University
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
+{% assign visible_publications = site.publications | where_exp: "item", "item.published != false" %}
+{% if visible_publications.size > 0 %}
+  <ul>{% for post in visible_publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+{% else %}
+No publications listed yet.
+{% endif %}
+
+Notes
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+More detailed CV entries, publications, and project information will be added here over time.

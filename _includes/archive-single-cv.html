@@ -11,6 +11,11 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
+{% assign rendered_authors = post.authors %}
+{% if post.author_highlight and post.authors %}
+  {% capture highlighted_author %}<strong>{{ post.author_highlight }}</strong>{% endcapture %}
+  {% assign rendered_authors = post.authors | replace: post.author_highlight, highlighted_author %}
+{% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -36,7 +41,8 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if rendered_authors %}<p class="archive__item-authors" itemprop="description">{{ rendered_authors }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
     </li>
  </article>
 </div>
