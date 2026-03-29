@@ -25,8 +25,8 @@ Research Interests
 
 Education
 ======
-* Senior Undergraduate Student, Peking University
-* Incoming Ph.D. Student, Peking University
+* Computer Science, School of EECS, Peking University, 2022.09~2026.07
+* Incoming Ph.D. Student, School of Computer Science, Peking University, 2026.09~
 
 Publications
 ======
