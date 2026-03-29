@@ -11,22 +11,25 @@ redirect_from:
 
 Profile
 ======
-* Name: Li Yixin
-* Affiliation: Peking University
-* Position: Senior Undergraduate Student
-* Next Position: Incoming Ph.D. Student at Peking University
-* Research Area: AI4SE
+* **Name:** Li Yixin
+* **Affiliation:** School of Electronics Engineering and Computer Science, Peking University
+* **Current Position:** Senior Undergraduate Student
+* **Incoming Position:** Ph.D. Student, Peking University, starting in Sep 2026
+* **Advisor:** Wei Ye, Associate Researcher and Director of the Knowledge Computing Lab
+* **Research Area:** AI for Software Engineering (AI4SE)
 
 Research Interests
 ======
-* AI for Software Engineering
+* AI for Software Engineering (AI4SE)
 * Large Language Models for Software Engineering
-* Coding Agent
+* Coding Agents
 
 Education
 ======
-* Computer Science, School of EECS, Peking University, 2022.09~2026.07
-* Incoming Ph.D. Student, School of Computer Science, Peking University, 2026.09~
+* **B.S. in Computer Science**, School of Electronics Engineering and Computer Science, Peking University  
+  Sep 2022 - Jul 2026 (expected)
+* **Ph.D. in Computer Science**, Peking University  
+  Starting in Sep 2026
 
 Publications
 ======
@@ -38,7 +41,3 @@ Publications
 {% else %}
 No publications listed yet.
 {% endif %}
-
-Notes
-======
-More detailed CV entries, publications, and project information will be added here over time.
